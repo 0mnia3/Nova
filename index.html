@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ND</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <nav id="mainHeader" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">NovaDevo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="btn btn-outline-light ms-3">
+          <i class="bi bi-moon-fill" id="darkIcon"></i>
+        </button> 
+      </div>
+    </div>
+  </nav>
+  <section class="scroll-section">
+    <div class="frame-container">
+      <img id="videoFrame" src="./frames/ezgif-frame-001.jpg" alt="frame">
+    </div>
+  </section>
+
+
+  <!-- Section1 -->
+  <section id="home" class="d-flex justify-content-center align-items-center vh-100 text-center bg-light">
+    <div>
+      <h1 class="moving-text">Congratulations to be part of our growing team here!</h1>
+    </div>
+  </section>
+
+  <!-- animation -->
+  <div id="lottie-animation"></div>
+
+  <!-- Section 2 -->
+  <section class="services">
+    <div class="container">
+    <div class="ser-top"><h2>Our Services</h2>
+        <br>
+        <div class="line"></div><br></div>
+    <div class="ser-items">
+        <div class="item">
+            <h3>UI/UX DESIGN</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus</p>
+        </div>
+        <div class="item">
+            <h3>APP DEVELOPMENT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus</p>
+        </div>
+        <div class="clr"></div>
+    </div>
+ 
+    </div>
+ </section>
+
+  
+  <!-- Section 3 -->
+  <section class="clients" id="clients">
+    <div class="content">
+      <h2>Clients</h2>
+    </div>
+    <div class="container">
+      <div class="client">
+        <div class="image"><img src="./imgs/images.jpg" alt="Master" /></div>
+        <div class="text">
+          <h3>Walter White</h3>
+          <button class="btn">Master</button>
+          <p>
+            Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+            tenetur ipsa quae aut. Ipsum exercitationem iure minima enim
+            corporis et voluptate.
+          </p>
+        </div>
+      </div>
+      <div class="client">
+        <div class="image"><img src="./imgs/images.jpg" alt="Patissier" /></div>
+        <div class="text">
+          <h3>Marco Jhonson</h3>
+          <button class="btn">Patissier</button>
+          <p>
+            Quo esse repellendus quia id. Est eum et accusantium pariatur
+            fugit nihil minima suscipit corporis. Voluptate sed quas
+            reiciendis animi neque sapiente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-dark text-white text-center py-3">
+    Contact us: info@example.com
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  </body>
+</html>

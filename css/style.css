@@ -1,0 +1,320 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    cursor: default;
+    overflow-x: hidden;
+  }
+  .container{
+    width: 80%;
+    margin: auto;
+}
+img{
+    width: 100%;
+}
+  /* #home{
+    .row{
+        display: flex;
+    }
+  } */
+  
+   #about{
+    height: 100vh;
+  }
+  h1.moving-text {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: slide 5s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+
+  #mainHeader {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    transition: top 0.3s ease-in-out;
+  }
+  
+ 
+  #mainHeader.centered {
+    justify-content: center !important;
+    text-align: center;
+  }
+  /* home */
+  #home {
+     position: relative;
+    overflow: hidden;
+    }
+    
+    #home::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background: linear-gradient(to right, #444, #888);
+     opacity: 0.3; 
+     z-index: 0;
+    }
+    
+    #home > div {
+     position: relative;
+     z-index: 1;
+    }
+    /* end home */
+  
+  .click-circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(6, 6, 6, 0.5);
+    animation: clickEffect 0.5s ease-out forwards;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes clickEffect {
+    0% {
+      opacity: 1;
+      transform: scale(1) translate(-50%, -50%);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(4) translate(-50%, -50%);
+    }
+  }
+/* sec2 */
+.services{
+  background-color: #f1f1f1;
+  height: 80vh;
+  vertical-align: middle;
+  overflow: auto;
+}
+.ser-top, .port-top, .feed-top, .blog-top, .con-top{
+  padding: 10px;
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+.line {
+  width: 200px;
+  height: 1px;
+  background-color: #ff305b;
+  margin-inline: auto;
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: #ff305b;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: #ff305b;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.services .ser-items{
+  margin-top: 40px;
+}
+.services .item{
+  width: 50%;
+  float: left;
+  padding: 30px;
+  transition: all 1s;
+}
+.services .item h3{
+  font-size: 24px;
+  margin: 15px 0;
+  color: #333333;
+}
+.services .item p{
+  font-size: 16px;
+  color: #555555;
+}
+.services .item:hover{
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(185, 185, 185, 0.6);
+  border-radius: 5px;
+}
+
+/* anmi */
+#lottie-animation{
+  width: 500px;
+  margin: auto;
+}
+
+  /* section3 */
+  .clients{
+    overflow: auto;
+
+    .btn{
+      color: #ce1212;
+      background-color: #cfcfe0;
+    }
+    
+   }
+   .clients .content{
+       text-align: center;
+       margin-top: 100px;
+   }
+   .clients .content h2{
+       color: #7f7f90;
+       text-transform: uppercase;
+       font-size: 30px;
+   }
+   .clients .content p{
+       font-family: "Amatic SC", sans-serif;
+       font-size: 50px;
+       color: #212529;
+   }
+   .clients .content span{
+       color: #ce1212;
+   }
+   .clients .container{
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       margin-top: 25px;
+       margin-bottom: 50px;
+   }
+   .clients .container .client{
+       background-color: white;
+       margin: 20px;
+       text-align: center;
+       position: relative;
+       width: 33%;
+       box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
+       border-radius: 10px;
+       overflow: hidden;
+       transition: all 1s;
+   }
+   
+   .clients .client .image{
+       position: relative;
+   }
+   .clients .client .image::before{
+       content:"";
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   width: 100%;
+   height: 60px;
+   background-image:url(../imgs/team-shape.svg);
+   }
+   .clients .client .text{
+       padding: 27px;
+   }
+   .clients .client .text h3{
+       margin-bottom: 10px;
+       color: #212529;
+       font-size: 17px;
+   }
+   .clients .client .text p{
+       margin-top: 10px;
+       font-style: italic;
+   }
+   .clients .client .text p,.clients .client .text span{
+      color:  #7f7f90;
+      font-size: 15px;
+   }
+   .clients .client:hover{
+       transform: scale(1.10);
+   }
+
+
+
+
+   /* Dark mode */
+
+   body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  body.dark-mode #mainHeader {
+     background-color: #c0b4b4 !important;
+    }
+    
+    body.dark-mode #mainHeader .navbar-brand,
+    body.dark-mode #mainHeader .nav-link {
+     color: #000000 !important;
+    }
+    body.dark-mode #mainHeader .nav-link:hover,
+body.dark-mode #mainHeader .nav-link.active {
+ color: #ce1212 !important; 
+}
+  body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+  }
+  body.dark-mode #home::before {
+    background: linear-gradient(to right, #111 0%, #222 100%);
+    opacity: 1;
+    }
+  body.dark-mode h1.moving-text {
+    color: #6f6969;
+   
+    }
+  body.dark-mode .services,
+  body.dark-mode .clients,
+  body.dark-mode footer {
+    background-color: #1a1a1a;
+  }
+  
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode p {
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .btn {
+    background-color: #444 !important;
+    color: #fff !important;
+  }
+  
+  body.dark-mode .item:hover {
+    background-color: #2a2a2a;
+  }
+  
+  body.dark-mode .client {
+    background-color: #2a2a2a;
+  }
+  .frame-container {
+    position: fixed;         
+    bottom: 20px;             
+    left: 10px;          
+    width: 150px;        
+    height: auto;
+    z-index: 1000;          
+    pointer-events: none;   }
+  
+  img {
+    width:250px;
+  }
